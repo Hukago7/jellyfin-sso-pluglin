@@ -1,4 +1,4 @@
-# 🇫🇷 Jellyfin SSO Auth Plugin / 🇬🇧 Plugin d'authentification SSO Jellyfin
+# 🇫🇷 Jellyfin SSO Auth Plugin / 🇬🇧 Jellyfin SSO Authentication Plugin
 
 ## 📌 🇫🇷 Description / 🇬🇧 Description
 🇫🇷 Ce plugin permet l'authentification Single Sign-On (**SSO**) avec **OpenID Connect** dans Jellyfin.
