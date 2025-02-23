@@ -1,17 +1,19 @@
-{
-  "name": "SSO Auth Plugin",
-  "guid": "hukago7-sso-auth",
-  "version": "1.0.0",
-  "description": "Authentification OpenID Connect pour Jellyfin",
-  "category": "Authentication",
-  "developer": "Hukago7",
-  "owner": "Hukago7",
-  "artifacts": [
-    {
-      "id": "jellyfin-plugin-ssoauth",
-      "version": "1.0.0",
-      "targetAbi": "10.9.0",
-      "sourceUrl": "https://github.com/Hukago7/jellyfin-sso-plugin/releases/download/v1.0.0/Jellyfin.Plugin.SSOAuth.dll"
-    }
-  ]
-}
+[
+  {
+    "name": "SSO Auth Plugin",
+    "guid": "hukago7-sso-auth",
+    "version": "1.0.0",
+    "description": "Authentification OpenID Connect pour Jellyfin",
+    "category": "Authentication",
+    "developer": "Hukago7",
+    "owner": "Hukago7",
+    "artifacts": [
+      {
+        "id": "jellyfin-plugin-ssoauth",
+        "version": "1.0.0",
+        "targetAbi": "10.9.0",
+        "sourceUrl": "https://github.com/Hukago7/jellyfin-sso-plugin/releases/download/v1.0.0/Jellyfin.Plugin.SSOAuth.dll"
+      }
+    ]
+  }
+]
