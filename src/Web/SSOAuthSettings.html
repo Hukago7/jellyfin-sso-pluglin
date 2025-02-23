@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSO Auth Plugin</title>
+    <script>
+        function saveSettings() {
+            var providerUrl = document.getElementById("providerUrl").value;
+            var clientId = document.getElementById("clientId").value;
+            var clientSecret = document.getElementById("clientSecret").value;
+            
+            fetch("/SSOAuthSettings/Save", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    ProviderUrl: providerUrl,
+                    ClientId: clientId,
+                    ClientSecret: clientSecret
+                })
+            }).then(response => {
+                if (response.ok) alert("Configuration enregistrée !");
+                else alert("Erreur lors de l'enregistrement.");
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Configuration SSO Auth</h2>
+    <label>Provider URL:</label>
+    <input type="text" id="providerUrl" value="https://authentik.mondomaine.com"><br>
+    <label>Client ID:</label>
+    <input type="text" id="clientId" value="jellyfin"><br>
+    <label>Client Secret:</label>
+    <input type="text" id="clientSecret" value="client-secret"><br>
+    <button onclick="saveSettings()">Enregistrer</button>
+</body>
+</html>
